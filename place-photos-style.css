@@ -1,0 +1,88 @@
+body {
+	font-family: 'Poiret One', cursive;
+	font-size: 16px;
+	line-height: 1.5;
+	
+	background-color: #F9EDED;
+	color: rgb(7, 7, 48);
+	margin: 40px auto 40px auto;
+	width: 620px;
+}
+.frame__title {font-weight: 200;
+  font-family: 'Poiret One', cursive;
+  font-size: 27vw;
+  color: black;
+  position: fixed;
+  
+      left: 0;
+      top: 0;
+      padding-top: 10px;
+      padding-left: 10px;
+      
+}
+.content__title {
+  font-family: 'Poiret One', cursive;
+font-weight: 700;
+position: relative;
+
+}
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: left;
+  font-weight: 200;
+  font-family: 'Poiret One', cursive;
+padding-left: 20px;
+padding-right: 30px;
+padding-top:10px;
+padding-bottom: 20px;
+justify-content: space-between; 
+font-size: 1.4em; 
+color: black;}
+a:link {
+  text-decoration: none;
+  color: black;
+}
+
+a:visited {
+  text-decoration: none;
+color: black;}
+div.project {
+  position: absolute;
+  top: 0;
+  left:  0;
+  width: 600px;
+  height: 400px;
+  user-select: none;
+}
+
+div.project div.move {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+div.project div.resize {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index:  2;
+  opacity: 0;
+}
+
+div.project:hover div.resize {
+  opacity: 1;
+}
+
+div.project img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  pointer-events: none;
+}
